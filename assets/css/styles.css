@@ -40,6 +40,24 @@ button {
   margin: 0 auto;
   padding: 0 10px;
 }
+.btn-primary {
+  padding: 12px 24px;
+  font-weight: 600;
+
+  background-color: #ee8313;
+}
+
+.btn-primary:hover {
+  background-color: #ef5e10;
+}
+
+.btn-secondary {
+  padding: 12px 24px;
+  font-weight: 600;
+  color: #ee8313;
+  border: 1px solid #ee8313;
+  line-height: 24px;
+}
 
 /*Header*/
 #header-section {
@@ -66,4 +84,84 @@ button {
   display: flex;
   gap: 48px;
   margin-right: 72px;
+}
+.nav-main__link:hover {
+  color: #ee8313;
+}
+
+/*Banner*/
+#banner-section {
+  position: relative;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.banner {
+  max-width: 475px;
+  padding-top: 45px;
+}
+
+.banner__header {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.6px;
+}
+.banner__text {
+  margin: 32px 0 48px;
+  font-size: 17px;
+  color: rgb(255 255 255/80%);
+}
+
+.banner-links-wrap {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+
+.banner-features__text {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.banner-features__text:first-child {
+  margin-right: 40px;
+}
+
+.banner-features__text_strong {
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 40px;
+  margin-right: 16px;
+  vertical-align: sub;
+}
+
+.banner-img {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  right: -25px;
+}
+
+.banner-img::before {
+  position: absolute;
+  content: "";
+  width: 96%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: url("../img/baner-main.png") no-repeat;
+  z-index: 2;
+}
+
+.banner-img::after {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgb(52 52 52 / 30%);
+  z-index: 1;
 }
