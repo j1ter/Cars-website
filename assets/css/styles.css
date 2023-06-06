@@ -40,6 +40,15 @@ button {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.title-section {
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .btn-primary {
   padding: 12px 24px;
   font-weight: 600;
@@ -164,4 +173,66 @@ button {
   right: 0;
   background-color: rgb(52 52 52 / 30%);
   z-index: 1;
+}
+
+/*Rent*/
+#rent-section {
+  padding: 120px 0;
+}
+
+.rent-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.rent {
+  position: relative;
+  height: 524px;
+  background: url("../img/rent.jpg") 50% / cover no-repeat;
+  font-weight: 600;
+}
+
+.rent:nth-child(2) {
+  background-image: url("../img/rent_2.jpg");
+}
+
+.rent:nth-child(3) {
+  background-image: url("../img/rent_3.jpg");
+}
+
+.rent:nth-child(4) {
+  background-image: url("../img/rent_4.jpg");
+}
+
+.rent__name {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  font-size: 40px;
+  letter-spacing: 0.6px;
+}
+
+.rent__link {
+  position: absolute;
+  bottom: 48px;
+  right: 60px;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  padding-right: 30px;
+}
+
+.rent__link::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 8px;
+  height: 16px;
+  transform: translateY(-50%);
+  background: url("../img/arrow.svg") 50% / cover no-repeat;
+}
+
+.rent__link:hover {
+  color: #ffcc2c;
 }
